@@ -3,4 +3,6 @@ const accCtr = require('../controllar/acc.js')
 
 const router = express.Router();
 
-router.post('/', accCtr.createAccount)
+router.post('/signup', accCtr.createAccount)
+
+module.exports = router
